@@ -95,5 +95,8 @@ button:hover {
     body {
         align-items: flex-start;
         padding-top: 2rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
     }
 }
