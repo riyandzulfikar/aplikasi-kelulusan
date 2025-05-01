@@ -1,11 +1,12 @@
 // Database siswa dan link PDF
-
 const siswaValid = [
     {
+        nama: "Alifah Najla",
         nisn: "12345",
         pdfUrl: "https://drive.google.com/file/d/1GrzH6wg16CIv3z-KSumWMoMQFJ7BLKqe/view"
     },
     {
+        nama: "Nur Afifah",
         nisn: "12346",
         pdfUrl: "https://drive.google.com/file/d/1nprYvi2gJGrn6V-2qW6pf0FLbm-cDtOB/view"
     }
@@ -14,15 +15,15 @@ const siswaValid = [
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
     e.preventDefault();
     
+    // Hanya ambil NISN (input nama dihapus)
     const nisn = document.getElementById('nisn').value.trim();
     
-    // Cari siswa yang sesuai
+    // Cari siswa berdasarkan NISN saja
     const siswa = siswaValid.find(s => s.nisn === nisn);
     
     if (siswa) {
-        // Redirect ke PDF yang sesuai
-        window.location.href = siswa.pdfUrl;
+        window.location.href = siswa.pdfUrl; // Redirect ke PDF
     } else {
-        alert("Data tidak ditemukan! Periksa kembali Nama dan NISN.");
+        alert("NISN tidak ditemukan!");
     }
 });
