@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Kelulusan</title>
+    <script>
+        // Ganti LINK_GOOGLE_DRIVE_PDF dengan link PDF Anda
+        const driveLink = "https://drive.google.com/file/d/ID_FILE/view?usp=sharing";
+        
+        // Redirect langsung ke Google Drive
+        window.location.href = driveLink.replace('/view', '/preview'); // Mode preview
+    </script>
+</head>
+<body>
+    <p>Jika tidak otomatis redirect, <a href="#" id="manualLink">klik di sini</a>.</p>
+    <script>
+        document.getElementById('manualLink').href = driveLink;
+    </script>
+</body>
+</html>
