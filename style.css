@@ -23,6 +23,12 @@ body {
     text-align: center;
 }
 
+.logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
 /* Form Elements */
 input {
     width: 100%;
