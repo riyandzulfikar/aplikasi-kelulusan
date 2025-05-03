@@ -23,10 +23,11 @@ body {
     text-align: center;
 }
 
-.logo {
-            max-width: 150px;
+ .logo {
+            width: 100px; /* Ukuran standar yang lebih kecil */
             height: auto;
-            margin-bottom: 20px;
+            margin: 0 auto 15px; /* Margin lebih rapat */
+            display: block;
         }
 
 /* Form Elements */
