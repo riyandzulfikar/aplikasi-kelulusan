@@ -1,0 +1,19 @@
+// File data-siswa.json
+[
+    {
+        "nama": "1", //ADILA RAHMATIKA
+        "nisn": "0074612008",
+        "pdfUrl": "https://drive.google.com/file/d/1bOsK9MGyTtzsE40z_bk-MfaWT35Qsk9B/view?usp=drive_link"
+    },
+    {
+        "nama": "2", //AGNIA KUSUMA INDRAHARTO
+        "nisn": "0085066642",
+        "pdfUrl": "https://drive.google.com/file/d/1_BGjYqceQ0dRy-VLqPj9mj8fwHY3yi8r/view?usp=drive_link"
+    },
+    {
+        "nama": "3", //AGNIA KUSUMA INDRAHARTO
+        "nisn": "0085066642",
+        "pdfUrl": "https://drive.google.com/file/d/1nprYvi2gJGrn6V-2qW6pf0FLbm-cDtOB/view"
+    },
+    // ... dan seterusnya sampai 132 entri
+]
