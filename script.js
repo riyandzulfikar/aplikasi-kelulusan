@@ -662,18 +662,56 @@ const siswaValid = [
     }
 ];
 
+function checkAccessTime() {
+    const now = new Date();
+    const targetDate = new Date('2025-05-05T16:00:00+08:00'); // 16:00 WITA (UTC+8)
+    
+    return now >= targetDate;
+}
+
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Hanya ambil NISN (input nama dihapus)
-    const nisn = document.getElementById('nisn').value.trim();
+    if (!checkAccessTime()) {
+        alert("Pengumuman kelulusan akan tersedia mulai 16:00 WITA, 5 Mei 2025");
+        return;
+    }
     
-    // Cari siswa berdasarkan NISN saja
+    const nisn = document.getElementById('nisn').value.trim();
     const siswa = siswaValid.find(s => s.nisn === nisn);
     
     if (siswa) {
-        window.location.href = siswa.pdfUrl; // Redirect ke PDF
+        window.location.href = siswa.pdfUrl;
     } else {
         alert("NISN tidak ditemukan!");
     }
 });
+
+// Countdown timer
+function updateCountdown() {
+    const targetDate = new Date('2025-05-05T16:00:00+08:00');
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        document.getElementById('countdown').innerHTML = `
+            Pengumuman akan dibuka dalam:<br>
+            <span style="font-size: 1.5em;">${days} hari ${hours} jam ${minutes} menit ${seconds} detik</span>
+        `;
+    } else {
+        document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
+    }
+}
+
+// Jalankan countdown setiap detik jika belum waktunya
+if (!checkAccessTime()) {
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Panggil sekali saat pertama kali load
+} else {
+    document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
+}
