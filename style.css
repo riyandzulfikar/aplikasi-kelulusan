@@ -24,11 +24,8 @@ body {
 }
 
 #countdown {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 20px 0;
-    font-weight: bold;
+    color: red;
+   
 }
 
  .logo {
