@@ -1,18 +1,13 @@
 // File data-siswa.json
 [
     {
-        "nama": "1", //ADILA RAHMATIKA
-        "nisn": "0074612008",
-        "pdfUrl": "https://drive.google.com/file/d/1bOsK9MGyTtzsE40z_bk-MfaWT35Qsk9B/view"
+        "nama": "Alifah Najla",
+        "nisn": "12345",
+        "pdfUrl": "https://drive.google.com/file/d/1GrzH6wg16CIv3z-KSumWMoMQFJ7BLKqe/view"
     },
     {
-        "nama": "2", //AGNIA KUSUMA INDRAHARTO
-        "nisn": "0085066642",
-        "pdfUrl": "https://drive.google.com/file/d/1_BGjYqceQ0dRy-VLqPj9mj8fwHY3yi8r/view"
-    },
-    {
-        "nama": "3", //AGNIA KUSUMA INDRAHARTO
-        "nisn": "0085066642",
+        "nama": "Nur Afifah",
+        "nisn": "12346",
         "pdfUrl": "https://drive.google.com/file/d/1nprYvi2gJGrn6V-2qW6pf0FLbm-cDtOB/view"
     },
     // ... dan seterusnya sampai 132 entri
