@@ -1,16 +1,17 @@
+
 // Database siswa dan link PDF
 const siswaValid = [
-                    {
-                        nama: "Alifah Najla",
-                        nisn: "12345",
-                        pdfUrl: "https://drive.google.com/file/d/1_BGjYqceQ0dRy-VLqPj9mj8fwHY3yi8r/view?usp=sharing"
-                    },
-                    {
-                        nama: "Nur Afifah",
-                        nisn: "12346",
-                        pdfUrl: "https://drive.google.com/file/d/1nprYvi2gJGrn6V-2qW6pf0FLbm-cDtOB/view"
-                    }    
-                    ];
+{
+nama: "Alifah Najla",
+nisn: "12345",
+pdfUrl: "https://drive.google.com/file/d/1GrzH6wg16CIv3z-KSumWMoMQFJ7BLKqe/view"
+},
+{
+nama: "Nur Afifah",
+nisn: "12346",
+pdfUrl: "https://drive.google.com/file/d/1nprYvi2gJGrn6V-2qW6pf0FLbm-cDtOB/view"
+}
+];
 
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
 e.preventDefault();
