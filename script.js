@@ -3,7 +3,7 @@ const siswaValid = [
                     {
                         nama: "Alifah Najla",
                         nisn: "12345",
-                        pdfUrl: "https://drive.google.com/file/d/1GrzH6wg16CIv3z-KSumWMoMQFJ7BLKqe/view"
+                        pdfUrl: "https://drive.google.com/file/d/1_BGjYqceQ0dRy-VLqPj9mj8fwHY3yi8r/view?usp=sharing"
                     },
                     {
                         nama: "Nur Afifah",
