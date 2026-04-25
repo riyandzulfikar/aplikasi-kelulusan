@@ -662,20 +662,67 @@ const siswaValid = [
     }
 ];
 
-const TANGGAL_PENGUMUMAN = new Date(Date.UTC(2026, 4, 5, 8, 0, 0)); // 5 Mei 2026 pukul 16:00 WITA
+// const TANGGAL_PENGUMUMAN = new Date(Date.UTC(2026, 4, 5, 8, 0, 0)); // 5 Mei 2026 pukul 16:00 WITA
 
-function checkAccessTime() {
-    const now = new Date();
-    return now >= TANGGAL_PENGUMUMAN;
-}
+// function checkAccessTime() {
+//     const now = new Date();
+//     return now >= TANGGAL_PENGUMUMAN;
+// }
+
+// document.getElementById('formKelulusan').addEventListener('submit', function(e) {
+//     e.preventDefault();
+    
+//     if (!checkAccessTime()) {
+//         alert("Pengumuman kelulusan akan tersedia mulai 16:00 WITA, 5 Mei 2026");
+//         return;
+//     }
+    
+//     const nisn = document.getElementById('nisn').value.trim();
+//     const siswa = siswaValid.find(s => s.nisn === nisn);
+    
+//     if (siswa) {
+//         window.location.href = siswa.pdfUrl;
+//     } else {
+//         alert("NISN tidak ditemukan!");
+//     }
+// });
+
+// // Countdown timer
+// let countdownInterval = null;
+
+// function updateCountdown() {
+//     const now = new Date();
+//     const diff = TANGGAL_PENGUMUMAN - now;
+
+//     if (diff > 0) {
+//         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+//         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+//         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+//         document.getElementById('countdown').innerHTML = `
+//             Pengumuman akan dibuka dalam:<br>
+//             <span style="font-size: 1.5em;">${days} hari ${hours} jam ${minutes} menit ${seconds} detik</span>
+//         `;
+//     } else {
+//         if (countdownInterval) {
+//             clearInterval(countdownInterval);
+//             countdownInterval = null;
+//         }
+//         document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
+//     }
+// }
+
+// // Jalankan countdown hanya jika waktu belum tercapai
+// if (!checkAccessTime()) {
+//     updateCountdown();
+//     countdownInterval = setInterval(updateCountdown, 1000);
+// } else {
+//     document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
+// }
 
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    if (!checkAccessTime()) {
-        alert("Pengumuman kelulusan akan tersedia mulai 16:00 WITA, 5 Mei 2026");
-        return;
-    }
     
     const nisn = document.getElementById('nisn').value.trim();
     const siswa = siswaValid.find(s => s.nisn === nisn);
@@ -687,36 +734,8 @@ document.getElementById('formKelulusan').addEventListener('submit', function(e) 
     }
 });
 
-// Countdown timer
-let countdownInterval = null;
-
-function updateCountdown() {
-    const now = new Date();
-    const diff = TANGGAL_PENGUMUMAN - now;
-
-    if (diff > 0) {
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-        
-        document.getElementById('countdown').innerHTML = `
-            Pengumuman akan dibuka dalam:<br>
-            <span style="font-size: 1.5em;">${days} hari ${hours} jam ${minutes} menit ${seconds} detik</span>
-        `;
-    } else {
-        if (countdownInterval) {
-            clearInterval(countdownInterval);
-            countdownInterval = null;
-        }
-        document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
-    }
-}
-
-// Jalankan countdown hanya jika waktu belum tercapai
-if (!checkAccessTime()) {
-    updateCountdown();
-    countdownInterval = setInterval(updateCountdown, 1000);
-} else {
-    document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
+// Hapus semua elemen countdown atau sembunyikan
+const countdownElement = document.getElementById('countdown');
+if (countdownElement) {
+    countdownElement.style.display = 'none';
 }
