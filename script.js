@@ -662,18 +662,18 @@ const siswaValid = [
     }
 ];
 
+const TANGGAL_PENGUMUMAN = new Date(Date.UTC(2026, 4, 5, 8, 0, 0)); // 5 Mei 2026 pukul 16:00 WITA
+
 function checkAccessTime() {
     const now = new Date();
-    const targetDate = new Date('2025-05-05T16:00:00+08:00'); // 16:00 WITA (UTC+8)
-    
-    return now >= targetDate;
+    return now >= TANGGAL_PENGUMUMAN;
 }
 
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
     e.preventDefault();
     
     if (!checkAccessTime()) {
-        alert("Pengumuman kelulusan akan tersedia mulai 16:00 WITA, 5 Mei 2025");
+        alert("Pengumuman kelulusan akan tersedia mulai 16:00 WITA, 5 Mei 2026");
         return;
     }
     
@@ -688,10 +688,11 @@ document.getElementById('formKelulusan').addEventListener('submit', function(e) 
 });
 
 // Countdown timer
+let countdownInterval = null;
+
 function updateCountdown() {
-    const targetDate = new Date('2026-05-05T16:00:00+08:00');
     const now = new Date();
-    const diff = targetDate - now;
+    const diff = TANGGAL_PENGUMUMAN - now;
 
     if (diff > 0) {
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -704,14 +705,18 @@ function updateCountdown() {
             <span style="font-size: 1.5em;">${days} hari ${hours} jam ${minutes} menit ${seconds} detik</span>
         `;
     } else {
+        if (countdownInterval) {
+            clearInterval(countdownInterval);
+            countdownInterval = null;
+        }
         document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
     }
 }
 
-// Jalankan countdown setiap detik jika belum waktunya
+// Jalankan countdown hanya jika waktu belum tercapai
 if (!checkAccessTime()) {
-    setInterval(updateCountdown, 1000);
-    updateCountdown(); // Panggil sekali saat pertama kali load
+    updateCountdown();
+    countdownInterval = setInterval(updateCountdown, 1000);
 } else {
     document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
 }
