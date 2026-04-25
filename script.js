@@ -689,7 +689,7 @@ document.getElementById('formKelulusan').addEventListener('submit', function(e) 
 
 // Countdown timer
 function updateCountdown() {
-    const targetDate = new Date('2025-05-05T16:00:00+08:00');
+    const targetDate = new Date('2026-05-05T16:00:00+08:00');
     const now = new Date();
     const diff = targetDate - now;
 
