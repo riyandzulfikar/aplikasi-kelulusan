@@ -2,8 +2,8 @@
 const siswaValid = [
     {
         nama: "1 ",
-        nisn: "0074612008",
-        pdfUrl: "https://drive.google.com/file/d/1H_ui5JHbs71_qHMrNTw4zjkLt44e6OHq/view"
+        nisn: "0063624784",
+        pdfUrl: "https://drive.google.com/file/d/1av_H__tAu6BhlNTH75hzAckUczOJ3eMx/view?usp=drive_link"
     },
     {
         nama: "2 ",
