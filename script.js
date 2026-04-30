@@ -13,7 +13,7 @@ const siswaValid = [
     {
         nama: "3 ",
         nisn: "0095472442",
-        pdfUrl: "https://drive.google.com/file/d/1UmwiRtfmphDF_26mGzQmQ-VCHgztb9bP/view"
+        pdfUrl: "https://drive.google.com/file/d/1ITIYyHlsjAaTvPkcWbuea2DC99dhxHEB/view"
     },
     {
         nama: "4 ",
@@ -28,12 +28,12 @@ const siswaValid = [
     {
         nama: "6 ",
         nisn: "0077875572",
-        pdfUrl: "https://drive.google.com/file/d/1WD9RWHqdhJ8DiGJI8McBnDNkBSwaw2Dl/view"
+        pdfUrl: "https://drive.google.com/file/d/14Ga2jrRrueOSs2hVDnsmczwHQ0EUoS7Y/view"
     },
     {
         nama: "7 ",
         nisn: "0076743778",
-        pdfUrl: "https://drive.google.com/file/d/1oyYwAHcukxdHNffKZs8hyYT9vr-2vzGL/view"
+        pdfUrl: "https://drive.google.com/file/d/1cBt4CMKEkl1oQOXB5KttIyGdq1z2wC_5/view"
     },
     {
         nama: "8 ",
@@ -138,7 +138,7 @@ const siswaValid = [
     {
         nama: "28 ",
         nisn: "0088759799",
-        pdfUrl: "https://drive.google.com/file/d/1ijQXxbWsH0xqF-jJrteJZqsry3U38mYx/view"
+        pdfUrl: "https://drive.google.com/file/d/14GEYoY8UQjvpEa6ThdTUw2VU0B5Gzq1T/view"
     },
     {
         nama: "29 ",
@@ -148,7 +148,7 @@ const siswaValid = [
     {
         nama: "30 ",
         nisn: "0084373076",
-        pdfUrl: "https://drive.google.com/file/d/1cVDWGSin_0KwNDdmd6qxAX6PvIETz70S/view"
+        pdfUrl: "https://drive.google.com/file/d/1oE53zUZ_4uR6QKMu48VUAhzNgUUTT_Jc/view"
     },
     {
         nama: "31 ",
@@ -163,7 +163,7 @@ const siswaValid = [
     {
         nama: "33 ",
         nisn: "0075771159",
-        pdfUrl: "https://drive.google.com/file/d/1mc7GO3dIX6PC8sSYJ1IG0YCBYwzZD1La/view"
+        pdfUrl: "https://drive.google.com/file/d/1hIdZ-IVgf-DaSgVGLMUzNFghi82bKWj-/view"
     },
     {
         nama: "34 ",
@@ -173,7 +173,7 @@ const siswaValid = [
     {
         nama: "35 ",
         nisn: "0074578721",
-        pdfUrl: "https://drive.google.com/file/d/16OKqnU3DWmFIZyAOzxRyQBp8h7oGp3yW/view"
+        pdfUrl: "https://drive.google.com/file/d/1KUhrtqNK5UEXrJ6rzJs9ahqX6yE0WWfB/view"
     },
     {
         nama: "36 ",
@@ -183,7 +183,7 @@ const siswaValid = [
     {
         nama: "37 ",
         nisn: "0086029223",
-        pdfUrl: "https://drive.google.com/file/d/1ogBCmk57FSvwYfcZ5YzPY2mrxzBzR3x1/view"
+        pdfUrl: "https://drive.google.com/file/d/1jRin79IKmbpkovhkpetVWBLB2eCyGUX1/view"
     },
     {
         nama: "38 ",
@@ -208,7 +208,7 @@ const siswaValid = [
     {
         nama: "42 ",
         nisn: "3076056473",
-        pdfUrl: "https://drive.google.com/file/d/1y_p8TvJaqT_BCrxC3XlADYhBZIYTuTVl/view"
+        pdfUrl: "https://drive.google.com/file/d/1VchjsZbP4JbfB59LcGRK4gky09AInud8/view"
     },
     {
         nama: "43 ",
@@ -228,7 +228,7 @@ const siswaValid = [
     {
         nama: "46 ",
         nisn: "0086195296",
-        pdfUrl: "https://drive.google.com/file/d/19bDrBfSUnVcjqxazri1Sn8D-pNbvJx_W/view"
+        pdfUrl: "https://drive.google.com/file/d/1UojMaExd2ogq-kL17JrejzH1bXcEzmYA/view"
     },
     {
         nama: "47 ",
@@ -238,7 +238,7 @@ const siswaValid = [
     {
         nama: "48 ",
         nisn: "0085943306",
-        pdfUrl: "https://drive.google.com/file/d/1ii9Lam0mFI-mxac8KD1cC358pB71HAgK/view"
+        pdfUrl: "https://drive.google.com/file/d/1i0fVzXhgykRB4huwhdJkXsGNefDR4GB9/view"
     },
     {
         nama: "49 ",
@@ -263,7 +263,7 @@ const siswaValid = [
     {
         nama: "53 ",
         nisn: "0074769541",
-        pdfUrl: "https://drive.google.com/file/d/1RCDngCt-mpFj63ZOC7pKs2Ytrafn7n5o/view"
+        pdfUrl: "https://drive.google.com/file/d/1RFP_hmSM8ARPDP5QkLmewoqonzB1s5E0/view"
     },
     {
         nama: "54 ",
@@ -293,7 +293,7 @@ const siswaValid = [
     {
         nama: "59 ",
         nisn: "0085501626",
-        pdfUrl: "https://drive.google.com/file/d/1mGm92GJtA212It94_qS7x-0pKpUdejac/view"
+        pdfUrl: "https://drive.google.com/file/d/1Lyr57W2wcuawN1MPswGsRXj_Cmc4AIzA/view"
     },
     {
         nama: "60 ",
@@ -318,7 +318,7 @@ const siswaValid = [
     {
         nama: "64",
         nisn: "0077248915",
-        pdfUrl: "https://drive.google.com/file/d/1mYd8bydYnqRK_rfG3YgEcA3dP7kSHxP3/view"
+        pdfUrl: "https://drive.google.com/file/d/1a3yfE3gv0qyIUcSowWGs7EwAmG4kXNIx/view"
     },
     {
         nama: "65",
@@ -328,7 +328,7 @@ const siswaValid = [
     {
         nama: "66",
         nisn: "0072692122",
-        pdfUrl: "https://drive.google.com/file/d/1e863-vm76zFc5VwplXSjoUOBam5VFg3d/view"
+        pdfUrl: "https://drive.google.com/file/d/1LlfEb8JbaruEq2fpTfrqPjEcIkv6sQ98/view"
     },
     {
         nama: "67",
@@ -408,7 +408,7 @@ const siswaValid = [
     {
         nama: "82",
         nisn: "0086110062",
-        pdfUrl: "https://drive.google.com/file/d/1o8-6hpAxahjC6TZCDp9Us0RBvsHUgdkE/view"
+        pdfUrl: "https://drive.google.com/file/d/167xlB_QzokWG48CbYI0lf8RQRw83sQez/view"
     },
     {
         nama: "83",
@@ -418,7 +418,7 @@ const siswaValid = [
     {
         nama: "84",
         nisn: "0081307299",
-        pdfUrl: "https://drive.google.com/file/d/1F_OWntiTeI1PWynMA4vC3Fs0RoMeRAv3/view"
+        pdfUrl: "https://drive.google.com/file/d/1LFuh7KPnnvvuckKO8QeWmX-eNd7HjhXi/view"
     },
     {
         nama: "85",
@@ -453,7 +453,7 @@ const siswaValid = [
     {
         nama: "91",
         nisn: "0074787246",
-        pdfUrl: "https://drive.google.com/file/d/1kYY2AkWHsSU7wDDwAKTKmDf4o6toiWtl/view"
+        pdfUrl: "https://drive.google.com/file/d/1X0ETywSOHKq_eTKVnGKXdrV4Y0ZDqz7y/view"
     },
     {
         nama: "92",
@@ -523,7 +523,7 @@ const siswaValid = [
     {
         nama: "105",
         nisn: "0072521832",
-        pdfUrl: "https://drive.google.com/file/d/17JrlNWXFXbvWx57TNrSlPGKu0MXGzFM-/view"
+        pdfUrl: "https://drive.google.com/file/d/1WIM4-yMokPlAI3Ax23vvOsL9eo2tRCcF/view"
     },
     {
         nama: "106",
@@ -533,7 +533,7 @@ const siswaValid = [
     {
         nama: "107",
         nisn: "0078732509",
-        pdfUrl: "https://drive.google.com/file/d/1ubhCn11bcBsMLiGLcwhaiNcpI-IaKA8L/view"
+        pdfUrl: "https://drive.google.com/file/d/1OT3QoX6HhDHuPzQx8IallAz3i37igXXh/view"
     },
     {
         nama: "108",
@@ -553,7 +553,7 @@ const siswaValid = [
     {
         nama: "111",
         nisn: "0083290971",
-        pdfUrl: "https://drive.google.com/file/d/1gheYbb3ioyxaXbG3jJLG6XdDuuDxfrCt/view"
+        pdfUrl: "https://drive.google.com/file/d/1oEqcgOcN0j1-FSgro2mSc28TlBH-aP_K/view"
     },
     {
         nama: "112",
@@ -598,7 +598,7 @@ const siswaValid = [
     {
         nama: "120",
         nisn: "0081782705",
-        pdfUrl: "https://drive.google.com/file/d/10xWkNMwXZfzk_Lqx5yU3owZIXNigmVxD/view"
+        pdfUrl: "https://drive.google.com/file/d/17MxevDiWSNCaShqfQFQB9hr5Km6pkjVU/view"
     },
         {
         nama: "121",
@@ -623,7 +623,7 @@ const siswaValid = [
     {
         nama: "125",
         nisn: "0083453651",
-        pdfUrl: "https://drive.google.com/file/d/1DbEcVHGR9pTd6QEiIYSTu1yxFQejwlZz/view"
+        pdfUrl: "https://drive.google.com/file/d/1lx4zPRS9mN--czwP8hg9jF1WeTJzZm0G/view"
     },
     {
         nama: "126",
@@ -643,12 +643,12 @@ const siswaValid = [
     {
         nama: "129",
         nisn: "0089433603",
-        pdfUrl: "https://drive.google.com/file/d/1zDprlsLG5bsDgsGVgS5EfWLjPgqsUYhn/view"
+        pdfUrl: "https://drive.google.com/file/d/1xGYXiv06bYNQclOutMAeCfVtAKv89DgR/view"
     },
     {
         nama: "130",
         nisn: "0086338553",
-        pdfUrl: "https://drive.google.com/file/d/1Vds7Tuo3rMHOVFYwlod-4RaOkYNqF8C6/view"
+        pdfUrl: "https://drive.google.com/file/d/1O9C9etG0Awjs7J0BVnMZvSPWECd5gaJt/view"
     },
     {
         nama: "131",
@@ -663,12 +663,12 @@ const siswaValid = [
     {
         nama: "133",
         nisn: "0072848841",
-        pdfUrl: "https://drive.google.com/file/d/1j3aP-z4NrSEc88AOyDSe9j3kTl3S7oxg/view"
+        pdfUrl: "https://drive.google.com/file/d/1g5-a2Z4Rb_t3Gy_MiC0RaiDaMgLTo7t_/view"
     },
     {
         nama: "134",
         nisn: "0076786603",
-        pdfUrl: "https://drive.google.com/file/d/19Eq2sJxpCGwQVzx7Z14ORxc3RTlToxy4/view"
+        pdfUrl: "https://drive.google.com/file/d/1Re2q5_ZgBoSEHNwFwHy4eoEqi2DP3N7C/view"
     },
     {
         nama: "135",
