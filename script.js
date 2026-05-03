@@ -1,3 +1,40 @@
+// ─── COUNTDOWN ───
+        // Set tanggal pengumuman di sini (ubah sesuai kebutuhan)
+        const TARGET_DATE = new Date('2025-07-05T08:00:00+08:00');
+
+        const cdDays  = document.getElementById('cd-days');
+        const cdHours = document.getElementById('cd-hours');
+        const cdMins  = document.getElementById('cd-mins');
+        const cdSecs  = document.getElementById('cd-secs');
+        const countdownWrap = document.querySelector('.countdown-wrap');
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = TARGET_DATE - now;
+
+            if (diff <= 0) {
+                cdDays.textContent  = '00';
+                cdHours.textContent = '00';
+                cdMins.textContent  = '00';
+                cdSecs.textContent  = '00';
+                countdownWrap.querySelector('.countdown-label').textContent = 'Pengumuman sudah dibuka!';
+                return;
+            }
+
+            const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const mins  = Math.floor((diff / (1000 * 60)) % 60);
+            const secs  = Math.floor((diff / 1000) % 60);
+
+            cdDays.textContent  = String(days).padStart(2, '0');
+            cdHours.textContent = String(hours).padStart(2, '0');
+            cdMins.textContent  = String(mins).padStart(2, '0');
+            cdSecs.textContent  = String(secs).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
 // Database siswa dan link PDF
 const siswaValid = [
     {
@@ -736,44 +773,6 @@ const siswaValid = [
 //     document.getElementById('countdown').innerHTML = "Pengumuman kelulusan telah dibuka!";
 // }
 
-
-// ─── COUNTDOWN ───
-        // Set tanggal pengumuman di sini (ubah sesuai kebutuhan)
-        const TARGET_DATE = new Date('2025-07-05T08:00:00+08:00');
-
-        const cdDays  = document.getElementById('cd-days');
-        const cdHours = document.getElementById('cd-hours');
-        const cdMins  = document.getElementById('cd-mins');
-        const cdSecs  = document.getElementById('cd-secs');
-        const countdownWrap = document.querySelector('.countdown-wrap');
-
-        function updateCountdown() {
-            const now = new Date();
-            const diff = TARGET_DATE - now;
-
-            if (diff <= 0) {
-                cdDays.textContent  = '00';
-                cdHours.textContent = '00';
-                cdMins.textContent  = '00';
-                cdSecs.textContent  = '00';
-                countdownWrap.querySelector('.countdown-label').textContent = 'Pengumuman sudah dibuka!';
-                return;
-            }
-
-            const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const mins  = Math.floor((diff / (1000 * 60)) % 60);
-            const secs  = Math.floor((diff / 1000) % 60);
-
-            cdDays.textContent  = String(days).padStart(2, '0');
-            cdHours.textContent = String(hours).padStart(2, '0');
-            cdMins.textContent  = String(mins).padStart(2, '0');
-            cdSecs.textContent  = String(secs).padStart(2, '0');
-        }
-
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-
 // ─── TOAST ───
         function showToast(msg, duration = 3000) {
             const toast = document.getElementById('toast');
@@ -782,12 +781,19 @@ const siswaValid = [
             setTimeout(() => toast.classList.remove('show'), duration);
         }
 
+        // ─── FORM HANDLER ───
+        const form         = document.getElementById('formKelulusan');
+        const nisnInput    = document.getElementById('nisn');
+        const overlay      = document.getElementById('overlay');
+        const resultIcon   = document.getElementById('resultIcon');
+        const resultIconSvg= document.getElementById('resultIconSvg');
+        const resultTitle  = document.getElementById('resultTitle');
+        const resultDesc   = document.getElementById('resultDesc');
+        const btnClose     = document.getElementById('btnClose');
 
-// Cek apakah pengumuman sudah dibuka
-            if (new Date() < TARGET_DATE) {
-                showToast('Pengumuman belum dibuka. Silakan tunggu hingga waktu yang ditentukan.');
-                return;
-            }
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
 
 //Form data siswa jika NISN tidak ditemukan
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
@@ -799,8 +805,18 @@ document.getElementById('formKelulusan').addEventListener('submit', function(e) 
     if (siswa) {
         window.location.href = siswa.pdfUrl;
     } else {
-        alert("NISN tidak ditemukan!");
+        showToast('NISN harus berupa 10 digit angka');
+                nisnInput.focus();
+                return;;
     }
+
+    // Cek apakah pengumuman sudah dibuka
+            if (new Date() < TARGET_DATE) {
+                showToast('Pengumuman belum dibuka. Silakan tunggu hingga waktu yang ditentukan.');
+                return;
+            }
+
+    
 });
 
 // Hapus semua elemen countdown atau sembunyikan
