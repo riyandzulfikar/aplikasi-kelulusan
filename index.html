@@ -564,9 +564,9 @@
 
     <script>
     // ═══════════════════════════════════════════════════════
-    //  DATABASE SISWA
+    //  DATABASE 
     // ═══════════════════════════════════════════════════════
-    const siswaValid = [
+    const Valid = [
     {
         nama: "1",
         nisn: "0063624784",
@@ -1428,14 +1428,14 @@ function updateCountdown() {
             btnSubmit.classList.remove('loading');
             btnSubmit.disabled = false;
 
-            const siswa = siswaValid.find(s => s.nisn === nisn);
+            const  = Valid.find(s => s.nisn === nisn);
 
-            if (siswa) {
+            if () {
                 openModal(
                     'pass',
                     'Selamat, Anda Lulus!',
-                    'Dengan ini dinyatakan bahwa siswa dengan NISN <span class="result-name">' + siswa.nisn + '</span> <strong>LULUS</strong> dari SMA IT Putri Abu Hurairah Mataram Tahun Ajaran 2025/2026.',
-                    siswa.pdfUrl
+                    'Dengan ini dinyatakan bahwa  dengan NISN <span class="result-name">' + santriwati.nisn + '</span> <strong>LULUS</strong> dari SMA IT Putri Abu Hurairah Mataram Tahun Ajaran 2025/2026.',
+                    santriwati.pdfUrl
                 );
             } else {
                 openModal(
