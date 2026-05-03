@@ -100,9 +100,6 @@ const siswaValid = [
         nisn: "0084633295",
         pdfUrl: "https://drive.google.com/file/d/16JnjIC06gYjnDu-BsunXG2gcyMYzvBx3/view"
     },
-    Berikut lanjutan kode sesuai urutan dari atas ke bawah, dimulai dari nomor 21:
-
-```js
     {
         nama: "21",
         nisn: "0089910957",
@@ -203,9 +200,6 @@ const siswaValid = [
         nisn: "0081940237",
         pdfUrl: "https://drive.google.com/file/d/10vropCzFcc3r8UDsS0O4QM5bWZRCMX9I/view"
     },
-    Berikut lanjutan kode sesuai urutan dari atas ke bawah, dimulai dari nomor 41:
-
-```js
     {
         nama: "41",
         nisn: "0088113421",
@@ -306,9 +300,6 @@ const siswaValid = [
         nisn: "0078182610",
         pdfUrl: "https://drive.google.com/file/d/1FGSYkUwg8d6o9HolcwWrexOagZ_G7APT/view"
     },
-    Berikut lanjutan kode sesuai urutan dari atas ke bawah, dimulai dari nomor 61 (karena sebelumnya sudah sampai nomor 60):
-
-```js
     {
         nama: "61",
         nisn: "0088007514",
@@ -459,9 +450,6 @@ const siswaValid = [
         nisn: "0087548466",
         pdfUrl: "https://drive.google.com/file/d/16EG1lWYfh4sHnR9CA9kX5NOZ7Ue5rurW/view"
     },
-    Berikut lanjutan kode sesuai urutan dari atas ke bawah, dimulai dari nomor 91:
-
-```js
     {
         nama: "91",
         nisn: "0074787246",
@@ -562,9 +550,6 @@ const siswaValid = [
         nisn: "0083774075",
         pdfUrl: "https://drive.google.com/file/d/1s_uKAUM7aiHjwLgFKuWeAskLMwnAk7yY/view"
     },
-    Berikut lanjutan kode sesuai urutan dari atas ke bawah, dimulai dari nomor 111:
-
-```js
     {
         nama: "111",
         nisn: "0083290971",
