@@ -1,8 +1,5 @@
 // Database siswa dan link PDF
 const siswaValid = [
-    Berikut lanjutan kode sesuai urutan dari atas ke bawah, **dimulai dari nomor 1**:
-
-```js
     {
         nama: "1",
         nisn: "0063624784",
