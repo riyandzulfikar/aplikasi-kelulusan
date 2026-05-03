@@ -780,10 +780,14 @@ const siswaValid = [
             toast.textContent = msg;
             toast.classList.add('show');
             setTimeout(() => toast.classList.remove('show'), duration);
-        }        
+        }
 
 
-
+// Cek apakah pengumuman sudah dibuka
+            if (new Date() < TARGET_DATE) {
+                showToast('Pengumuman belum dibuka. Silakan tunggu hingga waktu yang ditentukan.');
+                return;
+            }
 
 //Form data siswa jika NISN tidak ditemukan
 document.getElementById('formKelulusan').addEventListener('submit', function(e) {
