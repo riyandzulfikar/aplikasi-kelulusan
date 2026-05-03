@@ -538,7 +538,7 @@
             </button>
         </form>
 
-        <p class="footer">© 2025 SMA IT Putri Abu Hurairah Mataram</p>
+        <p class="footer">© 2026 SMA IT Putri Abu Hurairah Mataram</p>
     </div>
 
     <!-- Result Overlay -->
@@ -1237,42 +1237,79 @@
     }
 ];
 
-    // ═══════════════════════════════════════════════════════
-    //  COUNTDOWN
-    // ═══════════════════════════════════════════════════════
-    const TARGET_DATE = new Date('2025-07-05T08:00:00+08:00');
+    // // ═══════════════════════════════════════════════════════
+    // //  COUNTDOWN
+    // // ═══════════════════════════════════════════════════════
+    // const TARGET_DATE = new Date('2026-07-05T08:00:00+08:00');
 
-    const cdDays  = document.getElementById('cd-days');
-    const cdHours = document.getElementById('cd-hours');
-    const cdMins  = document.getElementById('cd-mins');
-    const cdSecs  = document.getElementById('cd-secs');
-    const countdownLabel = document.getElementById('countdownLabel');
-    const isCountdownOver = () => new Date() >= TARGET_DATE;
+    // const cdDays  = document.getElementById('cd-days');
+    // const cdHours = document.getElementById('cd-hours');
+    // const cdMins  = document.getElementById('cd-mins');
+    // const cdSecs  = document.getElementById('cd-secs');
+    // const countdownLabel = document.getElementById('countdownLabel');
+    // const isCountdownOver = () => new Date() >= TARGET_DATE;
 
-    function updateCountdown() {
-        const now  = new Date();
-        const diff = TARGET_DATE - now;
+    // function updateCountdown() {
+    //     const now  = new Date();
+    //     const diff = TARGET_DATE - now;
 
-        if (diff <= 0) {
-            cdDays.textContent  = '00';
-            cdHours.textContent = '00';
-            cdMins.textContent  = '00';
-            cdSecs.textContent  = '00';
-            countdownLabel.textContent = '✓ Pengumuman sudah dibuka!';
-            countdownLabel.classList.add('open');
-            return;
-        }
+    //     if (diff <= 0) {
+    //         cdDays.textContent  = '00';
+    //         cdHours.textContent = '00';
+    //         cdMins.textContent  = '00';
+    //         cdSecs.textContent  = '00';
+    //         countdownLabel.textContent = '✓ Pengumuman sudah dibuka!';
+    //         countdownLabel.classList.add('open');
+    //         return;
+    //     }
 
-        const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const mins  = Math.floor((diff / (1000 * 60)) % 60);
-        const secs  = Math.floor((diff / 1000) % 60);
+    //     const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+    //     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    //     const mins  = Math.floor((diff / (1000 * 60)) % 60);
+    //     const secs  = Math.floor((diff / 1000) % 60);
 
-        cdDays.textContent  = String(days).padStart(2, '0');
-        cdHours.textContent = String(hours).padStart(2, '0');
-        cdMins.textContent  = String(mins).padStart(2, '0');
-        cdSecs.textContent  = String(secs).padStart(2, '0');
+    //     cdDays.textContent  = String(days).padStart(2, '0');
+    //     cdHours.textContent = String(hours).padStart(2, '0');
+    //     cdMins.textContent  = String(mins).padStart(2, '0');
+    //     cdSecs.textContent  = String(secs).padStart(2, '0');
+    // }
+
+        // ═══════════════════════════════════════════════════════
+//  COUNTDOWN
+// ═══════════════════════════════════════════════════════
+const TARGET_DATE = new Date('2026-05-04T08:00:00+08:00');
+
+const cdDays  = document.getElementById('cd-days');
+const cdHours = document.getElementById('cd-hours');
+const cdMins  = document.getElementById('cd-mins');
+const cdSecs  = document.getElementById('cd-secs');
+const countdownLabel = document.getElementById('countdownLabel');
+const isCountdownOver = () => new Date() >= TARGET_DATE;
+
+function updateCountdown() {
+    const now  = new Date();
+    const diff = TARGET_DATE - now;
+
+    if (diff <= 0) {
+        cdDays.textContent  = '00';
+        cdHours.textContent = '00';
+        cdMins.textContent  = '00';
+        cdSecs.textContent  = '00';
+        countdownLabel.textContent = '✓ Pengumuman sudah dibuka!';
+        countdownLabel.classList.add('open');
+        return;
     }
+
+    const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins  = Math.floor((diff / (1000 * 60)) % 60);
+    const secs  = Math.floor((diff / 1000) % 60);
+
+    cdDays.textContent  = String(days).padStart(2, '0');
+    cdHours.textContent = String(hours).padStart(2, '0');
+    cdMins.textContent  = String(mins).padStart(2, '0');
+    cdSecs.textContent  = String(secs).padStart(2, '0');
+}
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
