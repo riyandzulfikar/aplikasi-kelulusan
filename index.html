@@ -2,20 +2,92 @@
 <html>
 <head>
     <title>Pengumuman Kelulusan Kelas XII SMA IT Putri Abu Hurairah Mataram TA.2025/2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
  
-    <div class="container">
-        <form id="formKelulusan">
-            <img src="logo-sma-putri.png" alt="Logo SMA IT Putri Abu Hurairah" class="logo">
-            <h1>Pengumuman Kelulusan Kelas XII SMA IT Putri <br> Abu Hurairah Mataram</h1>
-            <h1>TA.2025/2026</h1>
-            <div id="countdown" style="text-align: center; margin: 20px; font-weight: bold;"></div>
-            <input type="text" id="nisn" placeholder="Input NISN" required>
-            <button type="submit">Cek Kelulusan</button>
+   <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Main Card -->
+    <div class="card">
+        <!-- Logo -->
+        <div class="logo-wrap">
+            <img src="logo-sma-putri.png" alt="Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="icon-fallback iconify" data-icon="lucide:graduation-cap" style="display:none;"></span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="title">
+            <span>Pengumuman Kelulusan</span>
+            <span>Kelas XII SMA IT Putri</span>
+            <span>Abu Hurairah Mataram</span>
+        </h1>
+        <p class="subtitle">Tahun Ajaran 2025 / 2026</p>
+
+        <div class="divider"></div>
+
+        <!-- Countdown -->
+        <div class="countdown-wrap">
+            <p class="countdown-label">Pengumuman dibuka dalam</p>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="cd-days">--</div>
+                    <div class="countdown-unit">Hari</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="cd-hours">--</div>
+                    <div class="countdown-unit">Jam</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="cd-mins">--</div>
+                    <div class="countdown-unit">Menit</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="cd-secs">--</div>
+                    <div class="countdown-unit">Detik</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <form id="formKelulusan" autocomplete="off">
+            <div class="form-group">
+                <input
+                    type="text"
+                    id="nisn"
+                    class="input-field"
+                    placeholder="Masukkan NISN"
+                    required
+                    maxlength="10"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                >
+                <span class="form-icon iconify" data-icon="lucide:search"></span>
+            </div>
+            <button type="submit" class="btn-submit" id="btnSubmit">
+                Cek Kelulusan
+                <span class="iconify" data-icon="lucide:arrow-right"></span>
+            </button>
         </form>
+
+        <p class="footer">
+            © 2025 SMA IT Putri Abu Hurairah Mataram
+        </p>
+    </div>
+
+    <!-- Result Overlay -->
+    <div class="overlay" id="overlay">
+        <div class="result-card">
+            <div class="result-icon" id="resultIcon">
+                <span class="iconify" id="resultIconSvg" data-icon="lucide:check-circle-2"></span>
+            </div>
+            <h2 class="result-title" id="resultTitle">—</h2>
+            <p class="result-desc" id="resultDesc">—</p>
+            <button class="btn-close" id="btnClose">Tutup</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
